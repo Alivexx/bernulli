@@ -3,6 +3,11 @@
 
 #include <QMainWindow>
 #include <QString>
+#include "history.h"
+#include "theory.h"
+#include "calculator.h"
+#include "examples.h"
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,7 +21,9 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+
 private slots:
+
 
     void on_pushButton_history_clicked();
 
@@ -26,7 +33,18 @@ private slots:
 
     void on_pushButton_calc_clicked();
 
+    void on_action_2_triggered();
+
+    void on_action_triggered();
+
 private:
     Ui::MainWindow *ui;
+
+    History *HistoryWindow;
+    Theory *TheoryWindow;
+    Calculator *CalculatorWindow;
+    Examples *ExamplesWindow;
+
+
 };
 #endif // MAINWINDOW_H

@@ -196,7 +196,8 @@ Makefile: ../Popelov_Kuznetsov_bernulli/Popelov_Kuznetsov_bernulli.pro E:/Progra
 		E:/Programs/Qt/6.0.3/mingw81_64/lib/Qt6Gui.prl \
 		E:/Programs/Qt/6.0.3/mingw81_64/lib/Qt6Core.prl \
 		E:/Programs/Qt/6.0.3/mingw81_64/lib/Qt6EntryPoint.prl \
-		E:/Programs/Qt/6.0.3/mingw81_64/mkspecs/features/build_pass.prf
+		E:/Programs/Qt/6.0.3/mingw81_64/mkspecs/features/build_pass.prf \
+		../Popelov_Kuznetsov_bernulli/resource.qrc
 	$(QMAKE) -o Makefile ..\Popelov_Kuznetsov_bernulli\Popelov_Kuznetsov_bernulli.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 E:/Programs/Qt/6.0.3/mingw81_64/mkspecs/features/spec_pre.prf:
 E:/Programs/Qt/6.0.3/mingw81_64/mkspecs/features/device_config.prf:
@@ -325,6 +326,7 @@ E:/Programs/Qt/6.0.3/mingw81_64/lib/Qt6Gui.prl:
 E:/Programs/Qt/6.0.3/mingw81_64/lib/Qt6Core.prl:
 E:/Programs/Qt/6.0.3/mingw81_64/lib/Qt6EntryPoint.prl:
 E:/Programs/Qt/6.0.3/mingw81_64/mkspecs/features/build_pass.prf:
+../Popelov_Kuznetsov_bernulli/resource.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\Popelov_Kuznetsov_bernulli\Popelov_Kuznetsov_bernulli.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 

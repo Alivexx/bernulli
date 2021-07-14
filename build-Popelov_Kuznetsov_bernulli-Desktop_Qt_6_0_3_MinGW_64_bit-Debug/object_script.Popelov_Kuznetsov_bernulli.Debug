@@ -1,0 +1,12 @@
+debug/calculator.o
+debug/examples.o
+debug/history.o
+debug/main.o
+debug/mainwindow.o
+debug/theory.o
+debug/qrc_resource.o
+debug/moc_calculator.o
+debug/moc_examples.o
+debug/moc_history.o
+debug/moc_mainwindow.o
+debug/moc_theory.o

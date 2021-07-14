@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/rec">
+        <file>img/two-businessmen-holding-a-flag.png</file>
+        <file>img/YakobBernulli.png</file>
+        <file>img/calculator.png</file>
+        <file>img/books-stack-of-three.png</file>
+        <file>img/formula.png</file>
+        <file>img/research.png</file>
+        <file>img/furmulaBernulli.png</file>
+        <file>img/form.png</file>
+    </qresource>
+</RCC>

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>693</width>
+    <height>197</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,7 +17,7 @@
    <item>
     <widget class="QLabel" name="label">
      <property name="text">
-      <string>Формула Бернулли — формула в теории вероятностей, позволяющая находить вероятность появления события {displaystyle A}A определённое количество раз при любом числе независимых испытаний. Формула Бернулли позволяет избавиться от большого числа вычислений — сложения и умножения вероятностей — при достаточно большом количестве испытаний. Названа в честь выдающегося швейцарского математика Якоба Бернулли, который вывел эту формулу.</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Формула Бернулли&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; — формула в теории вероятностей, позволяющая находить вероятность появления события A определённое количество раз при любом числе независимых испытаний. Формула Бернулли позволяет избавиться от большого числа вычислений — сложения и умножения вероятностей — при достаточно большом количестве испытаний. Названа в честь выдающегося швейцарского математика &lt;/span&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline;&quot;&gt;Якоба Бернулли&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, который вывел эту формулу. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
