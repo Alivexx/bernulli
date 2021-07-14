@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>History</class>
+ <widget class="QDialog" name="History">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Формула Бернулли — формула в теории вероятностей, позволяющая находить вероятность появления события {displaystyle A}A определённое количество раз при любом числе независимых испытаний. Формула Бернулли позволяет избавиться от большого числа вычислений — сложения и умножения вероятностей — при достаточно большом количестве испытаний. Названа в честь выдающегося швейцарского математика Якоба Бернулли, который вывел эту формулу.</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
