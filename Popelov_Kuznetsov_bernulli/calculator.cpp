@@ -29,11 +29,29 @@ double fact(int N)
         return N * fact(N - 1);
 }
 
+float bernulliCalc(int n, float p, int k) {
+    float answer = (fact(n)/(fact(k)*fact(n-k)))*pow(p, k)*pow(1-p,n-k);
+    return answer;
+}
+
 void Calculator::on_Calculate_clicked()
 {
-    int n = ui->count->text().toInt();
-    float p = ui->prob->text().toFloat();
-    int k = ui->succ->text().toInt();
-    float answer = (fact(n)/(fact(k)*fact(n-k)))*pow(p, k)*pow(1-p,n-k);
-    QMessageBox::information(this, "Ответ", QString::number(answer));
+    QString nStr = ui->count->text();
+    QString pStr = ui->prob->text();
+    QString kStr = ui->succ->text();
+
+    if  (nStr =="" || pStr=="" || kStr=="") {
+        QMessageBox::about(this, "Ошибка","Введите все значения");
+        ui->answerField->setText("");
+    }
+        else {
+            int n = nStr.toInt();
+            float p = pStr.toFloat();
+            int k = kStr.toInt();
+            float answer = bernulliCalc(n, p, k);
+            ui->answerField->setText(QString::number(answer));
+        }
 }
+
+
+

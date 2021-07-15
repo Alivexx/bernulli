@@ -19,6 +19,7 @@
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -41,6 +42,7 @@ public:
     QLabel *label;
     QMenuBar *menuBar;
     QMenu *menu;
+    QToolBar *toolBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -48,16 +50,24 @@ public:
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setWindowModality(Qt::NonModal);
         MainWindow->resize(621, 281);
+        QIcon icon;
+        QString iconThemeName = QString::fromUtf8("black");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon.addFile(QString::fromUtf8(":/rec/img/MainIcon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        }
+        MainWindow->setWindowIcon(icon);
         action_2 = new QAction(MainWindow);
         action_2->setObjectName(QString::fromUtf8("action_2"));
-        QIcon icon;
-        icon.addFile(QString::fromUtf8(":/rec/img/two-businessmen-holding-a-flag.png"), QSize(), QIcon::Normal, QIcon::Off);
-        action_2->setIcon(icon);
+        QIcon icon1;
+        icon1.addFile(QString::fromUtf8(":/rec/img/two-businessmen-holding-a-flag.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action_2->setIcon(icon1);
         action = new QAction(MainWindow);
         action->setObjectName(QString::fromUtf8("action"));
-        QIcon icon1;
-        icon1.addFile(QString::fromUtf8(":/rec/img/YakobBernulli.png"), QSize(), QIcon::Normal, QIcon::Off);
-        action->setIcon(icon1);
+        QIcon icon2;
+        icon2.addFile(QString::fromUtf8(":/rec/img/YakobBernulli.png"), QSize(), QIcon::Normal, QIcon::Off);
+        action->setIcon(icon2);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         horizontalLayoutWidget = new QWidget(centralwidget);
@@ -76,9 +86,9 @@ public:
         sizePolicy.setHeightForWidth(pushButton_history->sizePolicy().hasHeightForWidth());
         pushButton_history->setSizePolicy(sizePolicy);
         pushButton_history->setAcceptDrops(false);
-        QIcon icon2;
-        icon2.addFile(QString::fromUtf8(":/rec/img/formula.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_history->setIcon(icon2);
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8(":/rec/img/formula.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_history->setIcon(icon3);
         pushButton_history->setIconSize(QSize(32, 32));
         pushButton_history->setCheckable(false);
         pushButton_history->setAutoRepeat(false);
@@ -92,9 +102,9 @@ public:
         pushButton_theory->setObjectName(QString::fromUtf8("pushButton_theory"));
         sizePolicy.setHeightForWidth(pushButton_theory->sizePolicy().hasHeightForWidth());
         pushButton_theory->setSizePolicy(sizePolicy);
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8(":/rec/img/books-stack-of-three.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_theory->setIcon(icon3);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8(":/rec/img/books-stack-of-three.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_theory->setIcon(icon4);
         pushButton_theory->setIconSize(QSize(32, 32));
 
         verticalLayout->addWidget(pushButton_theory);
@@ -108,9 +118,9 @@ public:
         pushButton_examples->setObjectName(QString::fromUtf8("pushButton_examples"));
         sizePolicy.setHeightForWidth(pushButton_examples->sizePolicy().hasHeightForWidth());
         pushButton_examples->setSizePolicy(sizePolicy);
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8(":/rec/img/research.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_examples->setIcon(icon4);
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8(":/rec/img/research.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_examples->setIcon(icon5);
         pushButton_examples->setIconSize(QSize(32, 32));
 
         verticalLayout_2->addWidget(pushButton_examples);
@@ -119,9 +129,9 @@ public:
         pushButton_calc->setObjectName(QString::fromUtf8("pushButton_calc"));
         sizePolicy.setHeightForWidth(pushButton_calc->sizePolicy().hasHeightForWidth());
         pushButton_calc->setSizePolicy(sizePolicy);
-        QIcon icon5;
-        icon5.addFile(QString::fromUtf8(":/rec/img/calculator.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_calc->setIcon(icon5);
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8(":/rec/img/calculator.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_calc->setIcon(icon6);
         pushButton_calc->setIconSize(QSize(32, 32));
 
         verticalLayout_2->addWidget(pushButton_calc);
@@ -140,6 +150,9 @@ public:
         menu = new QMenu(menuBar);
         menu->setObjectName(QString::fromUtf8("menu"));
         MainWindow->setMenuBar(menuBar);
+        toolBar = new QToolBar(MainWindow);
+        toolBar->setObjectName(QString::fromUtf8("toolBar"));
+        MainWindow->addToolBar(Qt::TopToolBarArea, toolBar);
 
         menuBar->addAction(menu->menuAction());
         menu->addAction(action_2);
@@ -164,6 +177,7 @@ public:
         pushButton_calc->setText(QCoreApplication::translate("MainWindow", "\320\232\320\260\320\273\321\214\320\272\321\203\320\273\321\217\321\202\320\276\321\200", nullptr));
         label->setText(QString());
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));
+        toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi
 
 };

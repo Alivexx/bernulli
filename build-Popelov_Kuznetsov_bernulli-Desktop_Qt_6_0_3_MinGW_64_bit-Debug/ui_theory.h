@@ -52,7 +52,7 @@ public:
 
     void retranslateUi(QDialog *Theory)
     {
-        Theory->setWindowTitle(QCoreApplication::translate("Theory", "Dialog", nullptr));
+        Theory->setWindowTitle(QCoreApplication::translate("Theory", "\320\242\320\265\320\276\321\200\320\270\321\217", nullptr));
         textBrowser->setHtml(QCoreApplication::translate("Theory", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"

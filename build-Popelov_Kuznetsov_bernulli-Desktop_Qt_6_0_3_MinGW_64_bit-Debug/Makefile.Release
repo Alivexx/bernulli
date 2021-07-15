@@ -128,14 +128,17 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_resource.cpp
 release/qrc_resource.cpp: ../Popelov_Kuznetsov_bernulli/resource.qrc \
 		E:/Programs/Qt/6.0.3/mingw81_64/bin/rcc.exe \
+		../Popelov_Kuznetsov_bernulli/img/form.png \
+		../Popelov_Kuznetsov_bernulli/img/YakobBernulli.png \
+		../Popelov_Kuznetsov_bernulli/img/furmulaBernulli.png \
+		../Popelov_Kuznetsov_bernulli/img/MainIcon.png \
 		../Popelov_Kuznetsov_bernulli/img/research.png \
 		../Popelov_Kuznetsov_bernulli/img/calculator.png \
-		../Popelov_Kuznetsov_bernulli/img/form.png \
 		../Popelov_Kuznetsov_bernulli/img/two-businessmen-holding-a-flag.png \
 		../Popelov_Kuznetsov_bernulli/img/formula.png \
 		../Popelov_Kuznetsov_bernulli/img/books-stack-of-three.png \
-		../Popelov_Kuznetsov_bernulli/img/YakobBernulli.png \
-		../Popelov_Kuznetsov_bernulli/img/furmulaBernulli.png
+		../Popelov_Kuznetsov_bernulli/img/examples/ax12.png \
+		../Popelov_Kuznetsov_bernulli/img/examples/ex3.png
 	E:\Programs\Qt\6.0.3\mingw81_64\bin\rcc.exe -name resource ..\Popelov_Kuznetsov_bernulli\resource.qrc -o release\qrc_resource.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -1007,6 +1010,9 @@ release/calculator.o: ../Popelov_Kuznetsov_bernulli/calculator.cpp ../Popelov_Ku
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlayout.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qgridlayout.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QLabel \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlabel.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qpicture.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QLineEdit \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlineedit.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qtextcursor.h \
@@ -1018,6 +1024,7 @@ release/calculator.o: ../Popelov_Kuznetsov_bernulli/calculator.cpp ../Popelov_Ku
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qabstractbutton.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qicon.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QVBoxLayout \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QWidget \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QMessageBox \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qmessagebox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\calculator.o ..\Popelov_Kuznetsov_bernulli\calculator.cpp
@@ -1165,10 +1172,16 @@ release/examples.o: ../Popelov_Kuznetsov_bernulli/examples.cpp ../Popelov_Kuznet
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlayout.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qgridlayout.h \
-		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QLabel \
-		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qlabel.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QTextBrowser \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qtextbrowser.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qtextedit.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qframe.h \
-		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qpicture.h
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qtextdocument.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qtextoption.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qtextcursor.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qtextformat.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtGui/qpen.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\examples.o ..\Popelov_Kuznetsov_bernulli\examples.cpp
 
 release/history.o: ../Popelov_Kuznetsov_bernulli/history.cpp ../Popelov_Kuznetsov_bernulli/history.h \
@@ -1635,6 +1648,8 @@ release/mainwindow.o: ../Popelov_Kuznetsov_bernulli/mainwindow.cpp ../Popelov_Ku
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QPushButton \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qpushbutton.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QToolBar \
+		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qtoolbar.h \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QVBoxLayout \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/QMessageBox \
 		E:/Programs/Qt/6.0.3/mingw81_64/include/QtWidgets/qmessagebox.h
