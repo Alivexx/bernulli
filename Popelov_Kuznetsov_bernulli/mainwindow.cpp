@@ -80,7 +80,7 @@ void MainWindow::on_pushButton_calc_clicked()
 
 void MainWindow::on_action_2_triggered()
 {
-    QMessageBox::information(this, "Авторы","Попелов Артём Андреевич и Кузнецов Егор Денисыч - студенты группы М1О-207Б-19");
+    QMessageBox::information(this, "Авторы","Попелов Артём Андреевич и Кузнецов Егор Денисович - студенты группы М1О-207Б-19");
 }
 
 
