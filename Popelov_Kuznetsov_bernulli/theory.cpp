@@ -12,3 +12,8 @@ Theory::~Theory()
 {
     delete ui;
 }
+
+void Theory::on_pushButton_proof_clicked()
+{
+
+}

@@ -15,6 +15,9 @@ public:
     explicit Theory(QWidget *parent = nullptr);
     ~Theory();
 
+private slots:
+    void on_pushButton_proof_clicked();
+
 private:
     Ui::Theory *ui;
 };
