@@ -40,6 +40,7 @@ public:
     QPushButton *pushButton_examples;
     QPushButton *pushButton_calc;
     QLabel *label;
+    QLabel *label_2;
     QMenuBar *menuBar;
     QMenu *menu;
     QToolBar *toolBar;
@@ -143,6 +144,9 @@ public:
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(200, 10, 331, 71));
         label->setPixmap(QPixmap(QString::fromUtf8(":/rec/img/form.png")));
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(500, 60, 111, 16));
         MainWindow->setCentralWidget(centralwidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
@@ -176,6 +180,7 @@ public:
         pushButton_examples->setText(QCoreApplication::translate("MainWindow", "\320\237\321\200\320\270\320\274\320\265\321\200\321\213", nullptr));
         pushButton_calc->setText(QCoreApplication::translate("MainWindow", "\320\232\320\260\320\273\321\214\320\272\321\203\320\273\321\217\321\202\320\276\321\200", nullptr));
         label->setText(QString());
+        label_2->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\277\321\200\320\260\320\262\320\270\320\273 \320\265\321\211\320\265 \321\200\320\260\320\267", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\241\320\277\321\200\320\260\320\262\320\272\320\260", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("MainWindow", "toolBar", nullptr));
     } // retranslateUi

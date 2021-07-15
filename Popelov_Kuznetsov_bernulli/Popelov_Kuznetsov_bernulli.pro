@@ -14,6 +14,7 @@ SOURCES += \
     history.cpp \
     main.cpp \
     mainwindow.cpp \
+    proofs.cpp \
     theory.cpp
 
 HEADERS += \
@@ -21,6 +22,7 @@ HEADERS += \
     examples.h \
     history.h \
     mainwindow.h \
+    proofs.h \
     theory.h
 
 FORMS += \
@@ -28,6 +30,7 @@ FORMS += \
     examples.ui \
     history.ui \
     mainwindow.ui \
+    proofs.ui \
     theory.ui
 
 # Default rules for deployment.
