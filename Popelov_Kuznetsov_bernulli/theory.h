@@ -1,5 +1,7 @@
 #ifndef THEORY_H
 #define THEORY_H
+#include "proofs.h"
+
 
 #include <QDialog>
 
@@ -15,8 +17,12 @@ public:
     explicit Theory(QWidget *parent = nullptr);
     ~Theory();
 
+private slots:
+    void on_pushButton_clicked();
+
 private:
     Ui::Theory *ui;
+    proofs * ProofsWindow;
 };
 
 #endif // THEORY_H
