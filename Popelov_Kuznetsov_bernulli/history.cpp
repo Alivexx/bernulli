@@ -1,6 +1,5 @@
 #include "history.h"
 #include "ui_history.h"
-#include <QMessageBox>
 
 History::History(QWidget *parent) :
     QDialog(parent),
@@ -13,4 +12,3 @@ History::~History()
 {
     delete ui;
 }
-

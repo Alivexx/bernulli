@@ -1,6 +1,5 @@
 #include "theory.h"
 #include "ui_theory.h"
-#include "mainwindow.h"
 
 Theory::Theory(QWidget *parent) :
     QDialog(parent),

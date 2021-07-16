@@ -3,15 +3,10 @@
 
 #include <QMainWindow>
 #include <QString>
-#include <QMessageBox>
 #include "history.h"
 #include "theory.h"
 #include "calculator.h"
 #include "examples.h"
-<<<<<<< Updated upstream
-=======
-#include "proofs.h"
->>>>>>> Stashed changes
 #include <QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -49,10 +44,6 @@ private:
     Theory *TheoryWindow;
     Calculator *CalculatorWindow;
     Examples *ExamplesWindow;
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 
 };
