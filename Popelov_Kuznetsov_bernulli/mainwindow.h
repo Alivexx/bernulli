@@ -3,11 +3,11 @@
 
 #include <QMainWindow>
 #include <QString>
+#include <QMessageBox>
 #include "history.h"
 #include "theory.h"
 #include "calculator.h"
 #include "examples.h"
-//#include "proofs.h"
 #include <QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -45,9 +45,5 @@ private:
     Theory *TheoryWindow;
     Calculator *CalculatorWindow;
     Examples *ExamplesWindow;
-//    proofs *ProofWindow;
-
-
-
 };
 #endif // MAINWINDOW_H

@@ -2,6 +2,7 @@
 #define THEORY_H
 
 #include <QDialog>
+#include "proofs.h"
 
 namespace Ui {
 class Theory;
@@ -16,10 +17,14 @@ public:
     ~Theory();
 
 private slots:
+
     void on_pushButton_proof_clicked();
 
 private:
     Ui::Theory *ui;
+
+    proofs *ProofsWindow;
+
 };
 
 #endif // THEORY_H
