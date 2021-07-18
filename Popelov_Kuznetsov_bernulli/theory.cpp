@@ -1,5 +1,7 @@
 #include "theory.h"
 #include "ui_theory.h"
+#include "mainwindow.h"
+#include "proofs.h"
 
 Theory::Theory(QWidget *parent) :
     QDialog(parent),
@@ -13,8 +15,8 @@ Theory::~Theory()
     delete ui;
 }
 
-void Theory::on_pushButton_clicked()
+void Theory::on_pushButton_proof_clicked()
 {
     ProofsWindow = new proofs(this);
-    ProofsWindow ->show();
+    ProofsWindow->show();
 }
